@@ -48,4 +48,4 @@ library(tidyverse)
     pivot_longer(-c(subject, activity), names_to="feature", values_to="mean")
   
   # Export new dataset
-  write.table(averages, "New Dataset.txt")
+  write.table(averages, file = "New Dataset.txt", row.names = FALSE)
